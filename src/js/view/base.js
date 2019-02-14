@@ -5,7 +5,6 @@ export const elements = {
     tableBody: document.querySelector('.table100__body'),
     containerFav: document.querySelector('.container__fav'),
     containerFavTags: document.querySelector('.container__fav-tags'),
-    containerFavTagsCros: document.querySelector('.tags__cross'),
     containerOutputWarn: document.querySelector('.outputWarn'),
     containerOutputWarnMsg : document.querySelector('.outputWarn__msg'),
     loadingEffect : document.querySelector('.lds-ellipsis'),

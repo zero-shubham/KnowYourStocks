@@ -1,6 +1,6 @@
 import {elements} from './base';
 
-export function renderFav(){
+export function renderFavIcon(){
     elements.favBtn.style.display = 'block';
     elements.favBtn.style.opacity = '1';
     elements.favBtn.classList.add('active');
@@ -32,7 +32,7 @@ function removeMsg(){
 }
 
 
-export function removeFav(){
+export function removeFavIcon(){
     elements.favBtn.style.display = 'none';
     elements.favBtn.style.opacity = '0';
     elements.favBtn.classList.remove('active');
