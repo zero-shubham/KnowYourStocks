@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>KnowYourStocks</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Indie+Flower|Roboto+Mono:100,300,400,500,700" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+<!--===============================================================================================-->
+</head>
+<body>
+	<div class="container">
+		<h1 class="container__head">KnowYourStocks</h1>
+		<div class="container__fav">Your Favourites: 
+			<span class="container__fav-tags">
+				Click on the $ when appears to add stock to favourites!
+				<!--<span class="tags">MCRSFT<span class="tags__cross">&Cross;</span></span>-->
+			</span>
+		</div>
+		<div class="container__input">
+
+			<div class="container__input-dropdown">
+				<select>
+						<option value="TIME_SERIES_INTRADAY">Intra-Day</option>
+						<option value="TIME_SERIES_DAILY">Daily</option>
+						<option value="TIME_SERIES_WEEKLY">Weekly</option>
+						<option value="TIME_SERIES_MONTHLY">Monthly</option>
+					 </select>
+			</div>
+			
+			<div class="container__input-inptxt">
+				<input type="text" id="stockName" placeholder="Stock Name" required>
+			</div>
+
+			<div class="container__input-btn">
+				<button>Retrieve</button>
+			</div>
+		</div>
+
+		<div class="container__output">
+			<div class="outputWarn">
+				<span class="outputWarn__msg">No Data Retrieved!</span> 
+				<div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>
+				<span class="outputWarn__fav">&dollar;</span>
+			</div>
+
+
+			<div class="limiter">
+				<div class="container-table100">
+					<div class="wrap-table100">
+						<div class="table100 ver1 m-b-110">
+							<table data-vertable="ver1">
+								<thead>
+									<tr class="row100 head">
+										<th class="column100 head1" data-column="column1">Timestamp</th>
+										<th class="column100 head2" data-column="column2">Open</th>
+										<th class="column100 head3" data-column="column3">High</th>
+										<th class="column100 head4" data-column="column4">Low</th>
+										<th class="column100 head5" data-column="column5">Close</th>
+										<th class="column100 head6" data-column="column6">Volume</th>
+									</tr>
+								</thead>
+								<tbody class="table100__body">
+									
+									<!--
+									<tr class="row100">
+										<td class="column100 column1" data-column="column1">Lawrence Scott</td>
+										<td class="column100 column2" data-column="column2">8:00 AM</td>
+										<td class="column100 column3" data-column="column3">--</td>
+										<td class="column100 column4" data-column="column4">--</td>
+										<td class="column100 column5" data-column="column5">8:00 AM</td>
+										<td class="column100 column6" data-column="column6">--</td>
+									</tr>
+		
+									<tr class="row100">
+										<td class="column100 column1" data-column="column1">Jane Medina</td>
+										<td class="column100 column2" data-column="column2">--</td>
+										<td class="column100 column3" data-column="column3">5:00 PM</td>
+										<td class="column100 column4" data-column="column4">5:00 PM</td>
+										<td class="column100 column5" data-column="column5">--</td>
+										<td class="column100 column6" data-column="column6">9:00 AM</td>
+									</tr>
+		
+									<tr class="row100">
+										<td class="column100 column1" data-column="column1">Billy Mitchell</td>
+										<td class="column100 column2" data-column="column2">9:00 AM</td>
+										<td class="column100 column3" data-column="column3">--</td>
+										<td class="column100 column4" data-column="column4">--</td>
+										<td class="column100 column5" data-column="column5">--</td>
+										<td class="column100 column6" data-column="column6">--</td>
+									</tr>
+		
+									<tr class="row100">
+										<td class="column100 column1" data-column="column1">Beverly Reid</td>
+										<td class="column100 column2" data-column="column2">--</td>
+										<td class="column100 column3" data-column="column3">5:00 PM</td>
+										<td class="column100 column4" data-column="column4">5:00 PM</td>
+										<td class="column100 column5" data-column="column5">--</td>
+										<td class="column100 column6" data-column="column6">9:00 AM</td>
+									</tr>
+		
+									<tr class="row100">
+										<td class="column100 column1" data-column="column1">Tiffany Wade</td>
+										<td class="column100 column2" data-column="column2">8:00 AM</td>
+										<td class="column100 column3" data-column="column3">--</td>
+										<td class="column100 column4" data-column="column4">--</td>
+										<td class="column100 column5" data-column="column5">8:00 AM</td>
+										<td class="column100 column6" data-column="column6">--</td>
+									</tr>
+		
+									<tr class="row100">
+										<td class="column100 column1" data-column="column1">Sean Adams</td>
+										<td class="column100 column2" data-column="column2">--</td>
+										<td class="column100 column3" data-column="column3">5:00 PM</td>
+										<td class="column100 column4" data-column="column4">5:00 PM</td>
+										<td class="column100 column5" data-column="column5">--</td>
+										<td class="column100 column6" data-column="column6">9:00 AM</td>
+									</tr>
+									-->
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+
+    </body>
+
+
+</html>
