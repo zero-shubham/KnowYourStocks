@@ -34,6 +34,7 @@ export default class Table {
                 rows.push(obj);
             });
             this.data = rows;
+            console.log(this.data)
         } catch (error) {
             this.data = 0;
         }

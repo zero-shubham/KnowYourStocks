@@ -17,6 +17,7 @@ async function retreive(){
     table = new Table(query);
     await table.getTable();
     if(table['data']){
+        remove(); //clearing table if there is already some old data already rendered
         removeLoading();
         render(table['data']);
         elements.inputStockName.value = table.query['stock'];
@@ -35,13 +36,17 @@ elements.btnRetreive.addEventListener('click',retreive);
 elements.containerOutputWarn.addEventListener('click', e=>{
     if(e.target === elements.favBtn)
         fav = addFav(fav);
-    window.localStorage.setItem('favs', JSON.stringify({'fav':fav}));
+    try{
+        window.localStorage.setItem('favs', JSON.stringify({'fav':fav}));
+    }catch{}
     if(fav)
         renderFavTags(fav);
 });
 
 window.addEventListener('load',()=>{
-    fav = JSON.parse(window.localStorage.getItem('favs'))['fav'];
+    try{
+        fav = JSON.parse(window.localStorage.getItem('favs'))['fav'];
+    }catch{}
     if(fav)
         renderFavTags(fav);
 
