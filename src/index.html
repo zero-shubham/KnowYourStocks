@@ -5,17 +5,17 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href="https://fonts.googleapis.com/css?family=Indie+Flower|Roboto+Mono:100,300,400,500,700" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="./css/style.css">
+	<!--<link rel="stylesheet" type="text/css" href="./css/style.css">-->
 <!--===============================================================================================-->
 </head>
 <body>
 	<div class="container">
 		<h1 class="container__head">KnowYourStocks</h1>
 		<div class="container__fav">Your Favourites: 
-			<span class="container__fav-tags">
+			<div class="container__fav-tags">
 				Click on the $ when appears to add stock to favourites!
 				<!--<span class="tags" data-ref="MSFT">MCRSFT<span class="tags__cross">&Cross;</span></span>-->
-			</span>
+			</div>
 		</div>
 		<div class="container__input">
 
@@ -28,13 +28,8 @@
 					 </select>
 			</div>
 			
-			<div class="container__input-inptxt">
-				<input type="text" id="stockName" placeholder="Stock Name" required>
-			</div>
-
-			<div class="container__input-btn">
-				<button>Retrieve</button>
-			</div>
+			<input  class="container__input-inptxt" type="text" id="stockName" placeholder="Stock Name" required>
+			<button class="container__input-btn">Retrieve</button>
 		</div>
 
 		<div class="container__output">
@@ -49,7 +44,7 @@
 				<div class="container-table100">
 					<div class="wrap-table100">
 						<div class="table100 ver1 m-b-110">
-							<table data-vertable="ver1">
+							<table data-vertable="ver1" class="table">
 								<thead>
 									<tr class="row100 head">
 										<th class="column100 head1" data-column="column1">Timestamp</th>
@@ -122,6 +117,10 @@
 						</div>
 					</div>
 				</div>
+			</div>
+
+			<!-- pagination numbers-->
+			<div class="container__output-pagination">
 			</div>
 		</div>
 	</div>

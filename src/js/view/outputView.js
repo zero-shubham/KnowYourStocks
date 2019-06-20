@@ -37,3 +37,18 @@ export function removeFavIcon(){
     elements.favBtn.style.opacity = '0';
     elements.favBtn.classList.remove('active');
 }
+
+export function renderPagination(pages){
+    let p = 1;
+    while(pages>0){
+        elements.pagination.insertAdjacentHTML('beforeend', 
+            `<span class="container__output-pagination-page">${p}</span>`
+        );
+        p++;
+        pages--;
+    }
+}
+
+export function removePagination(){
+    elements.pagination.innerHTML = "";
+}

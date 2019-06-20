@@ -1,7 +1,7 @@
 import {elements} from '../view/base'
 
 function getMarkup(item){
-    const markup = `<span class="tags" data-ref="${item}">${item}<span class="tags__cross">&Cross;</span></span>`
+    const markup = `<div class="tags" data-ref="${item}">${item}<span class="tags__cross">&Cross;</span></div>`
     return markup;
 }
 

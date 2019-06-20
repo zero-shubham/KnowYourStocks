@@ -8,5 +8,6 @@ export const elements = {
     containerOutputWarn: document.querySelector('.outputWarn'),
     containerOutputWarnMsg : document.querySelector('.outputWarn__msg'),
     loadingEffect : document.querySelector('.lds-ellipsis'),
-    favBtn : document.querySelector('.outputWarn__fav')
+    favBtn : document.querySelector('.outputWarn__fav'),
+    pagination: document.querySelector(".container__output-pagination")
 }
